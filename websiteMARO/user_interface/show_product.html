@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="../css/form/show.css">
+  
+ <link rel="stylesheet" href="../css/admin_panel.css"> 
+  
+</head>
+<body>
+ 
+ 
+ 
+  <div class="openMenue">
+    
+        <button id="open">
+          -->
+        </button>
+        
+      <button id="close">
+       &#9776;
+     </button>
+
+    
+  </div>
+  
+  <div id="myNav" class="overlay">
+    <div class="content">
+      <a class="openPageButton" data-element-id="add-Product-Page">اضافه حساب</a>
+    </div>
+    <!--CATEGORY FIRM-->
+  </div>  
+  
+  
+  
+
+<div class="container" id="category-page">
+  
+   <div class="column top-container" id="category">
+     
+ </div>
+</div>
+
+<div class="container" id="product-page">
+  
+<div class= "product-page top-container" id ="productId">
+  
+</div>
+
+</div>
+
+
+<div class="container " id="details-page">
+  <div class="column top-container" id="details">
+  </div>
+</div>
+
+<div class= "container" id="cart-page">
+  
+ <div class="container-cart top-container" id="cart">
+
+
+  </div>
+  
+ </div>
+
+<style>
+  
+  .footer {
+  background:#060B40;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 40px;
+}
+  
+  
+</style>
+<div class="footer">
+  <button id="Cart">0</button>
+</div>
+
+<script>
+
+
+let close = document.getElementById("close");
+
+close.addEventListener("click",() => {
+  openNav();
+});
+
+
+
+
+function openNav() {
+  document.getElementById("myNav").style.transform = "translateX(0)";
+  
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.transform = 'translateX(-100%)';
+  
+}
+
+
+
+document.addEventListener('click', function(event) {
+  if (event.target.id !== 'close' && event.target.id !== 'myNav') {
+    closeNav();
+  }
+});
+
+
+
+
+</script>
+
+<script type ="module" src="screen.js">
+
+</script>
+</body>
+</html>

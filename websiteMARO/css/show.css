@@ -1,0 +1,179 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #010318;
+  color: white;
+}
+
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+.container {
+  height:100vh;
+  width: 100vw;
+}
+
+
+.categoryCard {
+padding-top: 40px;
+padding-bottom: 40px;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+align-items: center;
+}
+
+
+.card {
+ width: 80%;
+ background: #010318;
+ margin: 5px;
+ padding: 14px;
+ border-radius: 10px;
+ border: 1px solid blue;
+ box-shadow: 3px 3px 5px 9px #02062D;
+}
+
+
+.card::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+
+.image-container{
+  border: 1px solid #121C89;
+  border-radius: 20px;
+  padding: 10px;
+  
+}
+
+.openMenue {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid blue;
+  background: red;
+}
+
+
+.openMenue button{
+  width: 10%;
+  color: white;
+  padding: 5px;
+  border: 1px solid blue;
+  background:blue;
+  margin: 4px;
+  margin-left: 3px;
+  border-radius: 5px;
+}
+
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.title{
+  padding: 5px;
+  text-align: center;
+}
+
+.product-button,.add-to-cart{
+  margin-top: 10px;
+  background:#010318;
+  color: white;
+  padding: 5px;
+  outline: none;
+  border: 1px solid #0F155A;
+  margin: 3px;
+  width: 50%;
+  border-radius: 12px;
+}
+
+
+
+.add-to-cart:hover{
+  background: green;
+}
+
+#proId{
+  border: 1px solid blue;
+  box-shadow:none;
+  padding: 10px;
+  margin: 2px;
+}
+
+
+.product-page{
+  background: #040F2B;
+}
+
+.products {
+  background: #071028;
+}
+
+
+#cart-page{
+  background: #010318;
+}
+
+
+.container-cart .parent-cart{
+ padding-top:60px;
+ padding-bottom:60px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: center; 
+  
+}
+.cart{
+  padding: 10px;
+  width: 45%;
+  margin: 3px;
+  box-shadow: 3px 3px 5px 9px #02062D;
+  border-radius: 10px;
+  margin: 3px;
+  border: 1px solid blue;
+}
+
+
+.footer{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footer button{
+  margin: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid blue;
+  background: #0B1686;
+  color: white;
+  border-radius: 10px;
+}
+
+.product-button:hover{
+  background: #555A93;
+}
+

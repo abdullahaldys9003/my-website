@@ -1,0 +1,41 @@
+ *{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+ }
+ 
+
+/* إعادة تعيين أنماط الأزرار */
+button {
+  margin: 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: none; /* تمت إضافتها هنا لإزالة حدود جميع الأزرار */
+  outline: none; /* تمت إضافتها هنا لإزالة حدود جميع الأزرار */
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+/* أنماط مشتركة لأزرار .form-actions و .button-category */
+.form-buttons { /* فئة عامة جديدة لكلا القسمين */
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 5px; /* يمكن تعديلها حسب الحاجة */
+}
+
+.form-buttons button {
+  width: 100%;
+  margin: 2px; /* يمكن تعديلها حسب الحاجة */
+  height: 35px; /* يمكن تعديلها حسب الحاجة */
+}
+
+
+
+.form-buttons .create {
+  background: #110D7C;
+}
+
+.form-buttons .close{
+  background: red;
+}

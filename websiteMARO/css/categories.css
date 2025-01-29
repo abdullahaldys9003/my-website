@@ -1,0 +1,170 @@
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;
+   color: white;
+   background: #010318;
+}
+
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+/* Style the tab */
+.tab {
+  overflow-x: auto;
+  overflow-y: auto;
+  position: fixed;
+  z-index:3;
+  top:50px;
+  display: none;
+  width: 35%;
+  bottom: 0;
+  right:0;
+  background: black;
+  box-shadow: inset 12px 0 20px  #1F2AA4;
+}
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: #2B34A1;
+  color: white;
+  margin: 3px;
+  padding: 2px 2px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 14px;
+  box-shadow: inset 12px 20px 20px  #1F2AA4;  
+  
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: green;
+  color:white;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  margin: 10px;
+  display: block;
+  padding: 0px 12px;
+  width: 100%;
+  margin: 7px;
+}
+
+/**/
+
+
+  .table-container {
+    margin-top: 30px;
+    width:100%;
+    overflow-x: auto;
+    overflow-y: auto;
+    height: 100%;
+    background: black;
+    border-radius: 6px;
+  }
+
+
+     table {
+      margin: 7px; 
+       border-collapse: collapse;
+       border-spacing: 0;
+       width: 100%;
+       font-size: 6px;
+       border-radius: 6px;
+     }
+     
+     table tbody{
+       font-size: 6px;
+     }
+     table thead{
+ position: sticky;
+top: 0;
+background: #04093D;
+     }
+     
+     th {
+       width: 100%;
+       text-align: center;
+       padding: 7px;
+       border: 1px solid blue;
+       background: #04093D;
+     }
+     
+     
+     td {
+       width: 100%;
+       text-align: center;
+       padding: 7px;
+       border: 1px solid blue;
+       background: #010318;
+    
+     }
+     
+     /*
+     tr:nth-child(even) {
+       background-color: #f2f2f2
+     }
+ */
+
+td button{
+background: #04093D;
+  outline: none;
+  color: white;
+  border: 1px solid blue;
+  padding: 7px;
+} 
+
+
+
+.tableProducts{
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.products-container{
+  width: 100%;
+}
+
+
+
+.tableCate {
+  position: relative;
+  border: 1px solid blue;
+  margin-bottom: 100px;
+  padding: 6px;
+  border-radius: 5px;
+ background: #0D188F;
+}
+
+.tableCate .button-category {
+  display: flex;
+  justify-content: space-between;
+  margin: 4px;
+ border-top: 1px solid #081494;
+}
+
+.tableCate .button-category button {
+  background:green;
+  border: 1px solid green;
+  color: whitesmoke;
+  margin: 7px;
+  
+}
+
+.nameCaregory {
+  border-bottom: 1px solid white;
+}

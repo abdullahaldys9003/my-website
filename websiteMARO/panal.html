@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="css/menuSubmit.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/admin_panel.css">
+  <link rel="stylesheet" href="css/buttons.css">
+  <link rel="stylesheet" href="css/form/category_form.css">
+  <link rel="stylesheet" href="css/categories.css">
+  <link rel="stylesheet" href="css/form/form_products.css">
+  <link rel="stylesheet" href="css/show.css">
+</head>
+
+<body>
+  
+  
+ <section class="menu">
+  <div class="open">
+     <button id="openNav">
+     &#9776;
+    </button>
+  </div>
+</section>
+
+ <div id="myNav" class="overlay">
+ <div class="content">
+  <a class="openPageButton" data-element-id="add-Product-Page">إضافة منتج</a>
+  <a class="openPageButton" data-element-id="add-Category-Page">إضافة صنف</a>
+  <a class="openPageButton" data-element-id="show-Products-Page">عرض المنتجات</a>
+ <a class="openPageButton" data-element-id="user-interfce">عرض المنتجات</a> 
+  
+  </div>
+  <!--CATEGORY FIRM-->
+  </div>
+  <br>
+  <br>
+ <div class="margin"> </div>
+
+
+<div id="add-Category-Page" class="container">
+  
+  <div class="form-container">
+    
+  <form id="categoryForm" class="category-form" >
+    
+    <div class="name">
+      <input type="text" class="input" id="categoryName" placeholder="add name"  required >
+    </div>
+
+    <div class="description">
+      <textarea class="input" id="categoryDescription" rows="5" placeholder="add description" required> </textarea>
+    </div>
+    
+    <div class="file">
+      <input type="file"  id="imageCategory" accept="image/*">
+    </div>
+    
+    <div class = form-buttons>
+      <button  id="buttonCategory" class="create">create</button>
+      <button id="closeFormCategory" class="close">إغلاق</button>
+    </div>
+  </form>
+  
+</div>
+  </div>
+
+
+
+<div id="add-Product-Page" class="container">
+  
+</div>
+
+
+<div id="show-Products-Page" class="container">
+  
+ 
+ 
+<section class="menu-2">
+ <div class="menusubmit">
+   
+ <div class="buttonMenu"> 
+ 
+       <div id="menutab" class="menuButton">
+        &#9776;
+      </div>
+      
+       <div id="buttonMenuAdding" class="menuButton">
+        &#9776;
+      </div>     
+ </div>
+ </div>
+ </section>
+
+
+ <div class="show-container-button-adding" id="displayMenue">
+   
+    <div class="menue-container">
+        <button id="buttonAddProduct">إضافه منتج</button>
+       <button id="buttonAddCategory">إضافه صنف</button>
+       </div>
+       
+ </div>
+ 
+ <div class="products-container" id="products-container">
+   
+
+  
+  <div id="displayCategoryContainer">
+    
+   </div>
+   
+   
+  
+  <div id="displayProductsContainer">
+ 
+  </div>
+ 
+        <!-- category -->
+        
+        <!-- tabcontent -->
+  </div>
+  
+</div>
+
+
+
+<section class="user-interfce container" id="user-interfce">
+ 
+ <div class="displayCategoryUser" id="displayCategoryUser">
+  
+  </div>
+ 
+</section>
+
+  <script type ="module" src="crud.js">
+  </script>
+  
+</body>
+</html>
